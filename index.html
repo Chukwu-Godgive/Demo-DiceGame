@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demo-DiceGame</title>
+    <link rel="icon" href="./Components/images/favicon/dice1.png" />
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,20 +14,164 @@
       rel="stylesheet"
     />
     <!-- Styles -->
-    <link rel="stylesheet/less" href="./Styles/style.less">
-    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <link rel="stylesheet/less" href="./Components/Styles/index.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
   </head>
   <body>
-    <header>
-        <div class="container">
-            <nav></nav>
-            <div>
-                <h1>Welcome to Demo-DiceGame</h1>
-                <p>Still under Construction . . . .</p>
-            </div>
+    <!-- Navbar menus section -->
+    <nav>
+      <div class="container">
+        <div class="navbar">
+          <a href="./index.html"
+            ><img
+              src="./Components/images/logo1.png"
+              alt="Demo-DiceGame"
+              class="logo"
+          /></a>
+          <div class="navbar-right">
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+            <a href="./Components/game.html" class="play"
+              >Play<img
+                src="./Components/images/favicon/dice3.png"
+                alt="play"
+                class="play-dice"
+            /></a>
+          </div>
         </div>
+      </div>
+    </nav>
+    <!-- Header and hero section -->
+    <header>
+      <div class="container">
+        <div class="header">
+          <div class="intro">
+            <h1>Welcome to Demo-DiceGame</h1>
+            <p>If it is not fun don't play it!</p>
+          </div>
+
+          <div class="cards">
+            <div id="features" class="card1">
+              <h1>Features</h1>
+              <div class="card1-content">
+                <div class="features">
+                  <img src="./Components/images/layers.png" alt="compatible" />
+                  <h1>Compatible</h1>
+                  <p>
+                    Demo-DiceGame is compatible across all devices and browsers,
+                    you need not worry.
+                  </p>
+                </div>
+
+                <div class="features">
+                  <img src="./Components/images/rocket-lunch.png" alt="fast" />
+                  <h1>Fast</h1>
+                  <p>
+                    Play on the move! Even when you have a slow device, you have
+                    nothing to disturb yourself.
+                  </p>
+                </div>
+
+                <div class="features">
+                  <img src="./Components/images/users.png" alt="multiple" />
+                  <h1>Multiple</h1>
+                  <p>
+                    It is a single and multiple based game play, that allows two
+                    people to have fun on the go.
+                  </p>
+                </div>
+
+                <div class="features">
+                  <img
+                    src="./Components/images/hand-holding-heart.png"
+                    alt="lovely"
+                  />
+                  <h1>Lovely</h1>
+                  <p>
+                    It is created out of love, it can help you take difficult
+                    decisions
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <!-- Main content section -->
+    <main>
+      <div class="container">
+        <div class="main">
+          <a href="./Components/game.html" class="play"
+            >Play<img
+              src="./Components/images/favicon/dice3.png"
+              alt=""
+              class="play-dice"
+          /></a>
+        </div>
+      </div>
+    </main>
+    <!-- Footer content section -->
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <!-- Social media section -->
+          <div class="social-media">
+            <a href="https://twitter.com/givestarzy">
+              <img src="./Components/images/twitter.png" alt="twitter" />
+            </a>
+
+            <a href="http://wa.me/2348130709131">
+              <img src="./Components/images/whatsapp.png" alt="whatsapp" />
+            </a>
+
+            <a href="https://www.facebook.com/chukwu.godgive/">
+              <img src="./Components/images/facebook.png" alt="facebook" />
+            </a>
+
+            <a href="https://www.linkedin.com/in/chukwu-godgive/">
+              <img src="./Components/images/linkedin.png" alt="linkedin" />
+            </a>
+
+            <a href="https://github.com/sponsors/Chukwu-Godgive">
+              <img src="./Components/images/github.png" alt="github" />
+            </a>
+          </div>
+          <!-- Contact form section -->
+          <form action="mailto:chukwugodgive@gmail.com" method="POST">
+            <div id="contact" class="contact">
+              <div class="email">
+                <p>Name</p>
+                <input type="text" placeholder="name" />
+                <p>Email</p>
+                <input type="email" placeholder="email" />
+                <button class="send">Send</button>
+              </div>
+              <div class="message">
+                <p>Message</p>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="message"
+                ></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- Copyright content section -->
+        <hr />
+        <div class="copyright">
+          <p>
+            <a href="./index.html"> Demo-DiceGame </a> &copy;
+            <!-- 
+              The script below helps to update the site year automatically
+            -->
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
