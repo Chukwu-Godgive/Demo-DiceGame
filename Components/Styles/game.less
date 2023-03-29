@@ -1,0 +1,56 @@
+// Reuseable components
+@primary-color: #00235b;
+@secondary-color: white;
+@btn-color: #ffdd83;
+@link-color: #e21818;
+@footer-color: #98dfd6c2;
+@head-font: "Sedgwick Ave Display", cursive;
+@text-font: "Work Sans", sans-serif;
+.reuse-btn {
+  background-color: @btn-color;
+  border-radius: 50px;
+  color: @primary-color;
+  font-family: @text-font;
+  padding: 5px 20px 5px 20px;
+}// End of reuseable components
+
+// Default settings
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: @primary-color;
+  color: @secondary-color;
+  text-align: center;
+  font: @text-font;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: @head-font;
+} // End of default settings
+
+// Game Environment
+.game {
+  height: 100vh;
+  padding-top: 10em;
+  .quit {
+    padding-top: 10em;
+    .btn {
+        .reuse-btn();
+        font-size: 20px;
+        border: none;
+        font-weight: bold;
+    }
+    .btn:hover {
+        color: @link-color;
+    }
+  }
+}

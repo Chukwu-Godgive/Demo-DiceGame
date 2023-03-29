@@ -1,0 +1,193 @@
+// Reuseable components
+@primary-color: #00235b;
+@secondary-color: white;
+@btn-color: #ffdd83;
+@link-color: #e21818;
+@footer-color: #98dfd6c2;
+@head-font: "Sedgwick Ave Display", cursive;
+@text-font: "Work Sans", sans-serif;
+.reuse-btn {
+  background-color: @btn-color;
+  border-radius: 50px;
+  color: @primary-color;
+  font-family: @text-font;
+}
+.play-dice {
+  padding-left: 20px;
+  width: 40px;
+}
+// End of reuseable components
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: @secondary-color;
+  font-family: @text-font;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+// All navbar design content section
+nav {
+  background-color: @secondary-color;
+  .navbar {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .logo {
+    width: 60px;
+  }
+  .navbar-right {
+    margin: 0 auto;
+  }
+  .navbar-right a {
+    text-decoration: none;
+    margin-left: 5em;
+    color: @primary-color;
+    font-weight: bold;
+  }
+  .navbar-right a:hover {
+    color: @link-color;
+  }
+  .play {
+    background-color: @btn-color;
+    padding: 5px 20px 5px 10px;
+    border-radius: 50px;
+    align-items: center;
+  }
+}
+
+// All header and hero design content section
+header {
+  background-color: @primary-color;
+  height: 75vh;
+  text-align: center;
+  .intro {
+    padding: 5em 0;
+    margin: 0 auto;
+    color: @secondary-color;
+    display: inline-block;
+  }
+  .cards {
+    color: rgb(39, 39, 39);
+  }
+  .card1 {
+    border-radius: 5px 5px 0 0;
+    background-color: @secondary-color;
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 5em;
+    text-align: center;
+  }
+  .card1-content {
+    border-radius: 5px 5px 0 0;
+    background-color: @secondary-color;
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+  .features {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10rem;
+  }
+  .features h1 {
+    padding: 15px 0;
+  }
+}
+
+// All main design content section
+main {
+  clear: both;
+  text-align: center;
+  padding: 5rem 0;
+  .play {
+    padding: 5px 20px 5px 10px;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    .reuse-btn()
+  }
+  .play:hover {
+    color: @link-color;
+  }
+}
+
+// All footer design content section
+footer {
+  background-color: @primary-color;
+  font-size: 18px;
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.5em 0 1.5em 0;
+    color: @footer-color;
+    align-items: center;
+  }
+  .social-media img {
+    border-radius: 2px;
+  }
+  .contact {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact input,
+  textarea {
+    outline: none;
+    padding: 0.5rem;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: @text-font;
+    width: 100%;
+  }
+  .email button:hover {
+    color: @link-color;
+  }
+  .message {
+    padding-left: 20px;
+    textarea {
+      height: 8.125rem;
+      width: 100%;
+    }
+  }
+  .send {
+    border: none;
+    padding: 5px 20px 5px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 5px;
+    .reuse-btn()
+  }
+  hr {
+    border: none;
+    border-bottom: 1px solid;
+    color: @footer-color;
+  }
+  .copyright {
+    font-family: @text-font;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0.5em;
+    color: @footer-color;
+    text-align: center;
+  }
+  .copyright a {
+    text-decoration: none;
+    color: @footer-color;
+  }
+}

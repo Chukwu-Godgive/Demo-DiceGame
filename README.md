@@ -1,6 +1,9 @@
 ## Description
+
 This is a game that is based on dice rolling to determine the winner through the highest dice value.
+
 It is a fun game to play.
+
 
 ### Goto menu
 
@@ -10,7 +13,11 @@ It is a fun game to play.
 [Styles Guide](./Documentation/styleguide.md)
 
 ### Tools
+
 Html
+
 Css
+
 LessJs
+
 JavaScript
