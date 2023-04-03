@@ -19,16 +19,38 @@
   <body>
     <header>
       <div class="container">
+        <!-- To quit from the game -->
+        <div class="quit">
+          <form action="../">
+            <button class="btn">Quit</button>
+          </form>
+        </div>
         <div class="game">
-          <h1>Welcome to Demo-DiceGame</h1>
-          <p>Still under Construction . . . .</p>
-          <div class="quit">
-            <form action="../index.html">
-              <button class="btn">Quit</button>
-            </form>
+          <div id="hidden">
+            <h1>Welcome to Demo-DiceGame</h1>
+            <p>a fun game, it can also help you take decisions.</p>
+          </div>
+          <!-- Game environment -->
+          <h1 id="winner"></h1>
+          <img class="trophy" />
+          <div class="game-body">
+            <div class="player1">
+              <p id="player1">Player 1</p>
+              <img class="dice-face1" />
+            </div>
+
+            <div class="player2">
+              <p id="player2">Player 2</p>
+              <img class="dice-face2" />
+            </div>
+          </div>
+
+          <div class="play">
+            <button class="btn" id="btn">Play</button>
           </div>
         </div>
       </div>
     </header>
+    <script src="./game.js"></script>
   </body>
 </html>
