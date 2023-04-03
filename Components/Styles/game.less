@@ -1,3 +1,6 @@
+/**
+  Note most of the id's and classes are nested
+  */
 // Reuseable components
 @primary-color: #00235b;
 @secondary-color: white;
@@ -12,7 +15,7 @@
   color: @primary-color;
   font-family: @text-font;
   padding: 5px 20px 5px 20px;
-}// End of reuseable components
+} // End of reuseable components
 
 // Default settings
 * {
@@ -25,7 +28,7 @@ body {
   background-color: @primary-color;
   color: @secondary-color;
   text-align: center;
-  font: @text-font;
+  font-family: @text-font;
 }
 
 .container {
@@ -40,17 +43,54 @@ h1 {
 // Game Environment
 .game {
   height: 100vh;
-  padding-top: 10em;
-  .quit {
-    padding-top: 10em;
-    .btn {
-        .reuse-btn();
-        font-size: 20px;
-        border: none;
-        font-weight: bold;
+  padding-top: 5em;
+
+  .game-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 50px;
+  }
+  .player1,
+  .player2 {
+    #player1,
+    #player2 {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      font-weight: bold;
     }
-    .btn:hover {
-        color: @link-color;
-    }
+  }
+}
+
+.dice-face1,
+.dice-face2 {
+  border-radius: 20px;
+  width: 8em;
+}
+
+.quit {
+  padding-top: 1em;
+  text-align: right;
+  .btn {
+    .reuse-btn();
+    font-size: 16px;
+    border: none;
+    font-weight: bold;
+  }
+  .btn:hover {
+    color: @link-color;
+  }
+}
+
+// Game button
+.play {
+  padding-top: 5em;
+  .btn {
+    .reuse-btn();
+    font-size: 20px;
+    border: none;
+    font-weight: bold;
+  }
+  .btn:hover {
+    color: @link-color;
   }
 }
